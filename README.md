@@ -13,17 +13,17 @@ A perceptron is represented by avector and the elements are the weights.  For th
 
 All implementations below are a correlating predictor. They were implemented based onthe algorithm proposed by [Jim ́enez and Lin 2001]. All our implementations are availableon github: https://github.com/guilhermedefalque/Perceptrons-Branches-Predictor.
 
--> Percptron 1 (P1): This version was implemented using the idea of Global per-ceptron with 4 bits in the global history (16 columns), 4 values in the weight vectorand 1 global bias;
+- Percptron 1 (P1): This version was implemented using the idea of Global per-ceptron with 4 bits in the global history (16 columns), 4 values in the weight vectorand 1 global bias;
 
--> Percptron 2 (P2): This version was implemented using the idea of Local percep-tron with 4 bits in the local history, 4 values in the weight vector and 1 bias;
+- Percptron 2 (P2): This version was implemented using the idea of Local percep-tron with 4 bits in the local history, 4 values in the weight vector and 1 bias;
 
--> Percptron 3 (P3): This version was implemented using the idea of Hybrid per-ceptron with 4 bits in the global history (16 columns), 4 bits in the local history, 4 values in the weight vector and 1 bias;
+- Percptron 3 (P3): This version was implemented using the idea of Hybrid per-ceptron with 4 bits in the global history (16 columns), 4 bits in the local history, 4 values in the weight vector and 1 bias;
 
--> Percptron 4 (P4): This version was implemented using the idea of Hybrid per-ceptron with 4 bits in the global history (16 columns), 8 bits in the local history, 8 values in the weight vector and 1 bias;
+- Percptron 4 (P4): This version was implemented using the idea of Hybrid per-ceptron with 4 bits in the global history (16 columns), 8 bits in the local history, 8 values in the weight vector and 1 bias;
 
--> Percptron 5 (P5): This version was implemented using the idea of Hybrid per-ceptron and the prediction table (8 columns) is separated by instruction type. Thisperceptron has 8 bits in the local history, 8 values in the weight vector and 1 bias;
+- Percptron 5 (P5): This version was implemented using the idea of Hybrid per-ceptron and the prediction table (8 columns) is separated by instruction type. Thisperceptron has 8 bits in the local history, 8 values in the weight vector and 1 bias;
 
--> Percptron 6 (P6): This version was implemented using the idea of Hybrid per-ceptron and the prediction table (8 columns) is separated by instruction type. Thisperceptron has 16 bits in the local history, 16 values in the weight vector and 1 bias.
+- Percptron 6 (P6): This version was implemented using the idea of Hybrid per-ceptron and the prediction table (8 columns) is separated by instruction type. Thisperceptron has 16 bits in the local history, 16 values in the weight vector and 1 bias.
 
 # Pre-requisites and Instalations:
 
