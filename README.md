@@ -23,40 +23,42 @@ All implementations below are a correlating predictor. They were implemented bas
 
 - Percptron 5 (P5): This version was implemented using the idea of Hybrid per-ceptron and the prediction table (8 columns) is separated by instruction type. Thisperceptron has 8 bits in the local history, 8 values in the weight vector and 1 bias;
 
- - - Percptron 6 (P6): This version was implemented using the idea of Hybrid per-ceptron and the prediction table (8 columns) is separated by instruction type. Thisperceptron has 16 bits in the local history, 16 values in the weight vector and 1 bias.
+- Percptron 6 (P6): This version was implemented using the idea of Hybrid per-ceptron and the prediction table (8 columns) is separated by instruction type. Thisperceptron has 16 bits in the local history, 16 values in the weight vector and 1 bias.
 
 # Pre-requisites and Instalations:
 
-- Ubuntu 14.0.4;
+- Traces ArchC Generation
 
-- For Arch C and system C instalation: GCC, G++, python, unzip, gawk, libc6- i386, vim, m4, patch, git, autoconf, libtool, libdw-dev, bison, flex, byacc, pkg-config, build-essential, automake. Em geral, todas podem ser instaladas por apt-get.
+  - Ubuntu 14.0.4;
 
-- System C instalation: Download of SystemC 2.3.1 (including TLM): http://
-www.accellera.org/downloads/standards/systemc 
+  - For Arch C and system C instalation: GCC, G++, python, unzip, gawk, libc6- i386, vim, m4, patch, git, autoconf, libtool, libdw-dev, bison, flex, byacc, pkg-config, build-essential, automake. Em geral, todas podem ser instaladas por apt-get.
 
-- Follow the installation steps directly from the official website: http://www.archc.org/doc.quickstart.html
+  - System C instalation: Download of SystemC 2.3.1 (including TLM): http://
+  www.accellera.org/downloads/standards/systemc 
 
-- Download of Archc Mips Emulator in git clone https://github.com/archc/mips.git
+  - Follow the installation steps directly from the official website: http://www.archc.org/doc.quickstart.html
 
-- Define data caches and instructions on each model. To do so, using the
-MIPS model as an example, you should edit the mips.ac file with the settings of
-cache:
+  - Download of Archc Mips Emulator in git clone https://github.com/archc/mips.git
 
-```
-AC_ARCH(mips){
- ac_mem DM:512M;
- ac_icache IC("2w", 128, 8, "wt", "lru"); //*
- ac_dcache DC("2w", 128, 8, "wt", "lru"); //*
- 
- ARCH_CTOR(mips) {
+  - Define data caches and instructions on each model. To do so, using the
+  MIPS model as an example, you should edit the mips.ac file with the settings of
+  cache:
 
- IC.bindTo (DM); //*
- DC.bindTo (DM); //*
- };
-};
-```
-- Change the mips_isa.cpp file to the one found in our repository.
+  ```
+  AC_ARCH(mips){
+   ac_mem DM:512M;
+   ac_icache IC("2w", 128, 8, "wt", "lru"); //*
+   ac_dcache DC("2w", 128, 8, "wt", "lru"); //*
 
-- Download Mibench applications from the link: http://archc.lsc.ic.unicamp.br/downloads.html - version 4.8.1.
+   ARCH_CTOR(mips) {
+
+   IC.bindTo (DM); //*
+   DC.bindTo (DM); //*
+   };
+  };
+  ```
+  - Change the mips_isa.cpp file to the one found in our repository.
+
+  - Download Mibench applications from the link: http://archc.lsc.ic.unicamp.br/downloads.html - version 4.8.1.
 
 
