@@ -61,4 +61,6 @@ All implementations below are a correlating predictor. They were implemented bas
 
   - Download Mibench applications from the link: http://archc.lsc.ic.unicamp.br/downloads.html - version 4.8.1.
 
+- Java Predictor Application Run [Defalque and Thames 2017]
 
+  - Java SE Development Kit 8;
