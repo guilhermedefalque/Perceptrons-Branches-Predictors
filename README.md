@@ -3,13 +3,6 @@
 
 Artificial intelligence is an area that has been widely used in several sectors,  due to its competence in creating mathematical models and estimat-ing results.  Branch prediction is one of the most important topics in computerdesign.  It is largely responsible for determining whether a pipeline executionflows is correct on processors when they are executing conditional branch in-structions,  in  order  to  avoid  undesirably  losing  clock  cycles.   Nowadays,  wehave  some  literature  that  shows  the  use  of  some  methods  to  implement  dy-namic branch predictors with artificial intelligence,  but many of these workstry to increase the reduction o Miss Prediction, however, they use methodolo-gies that implement non-causal systems and that do not allow concrete imple-mentation in computational systems, despite having a high success rate.  Thiswork aims to carry out a study of parameters and implementation of branchpredictors  using  artificial  intelligence  with  traces  generated  by  a  MIPS  sim-ulator  designed  with  ArchC.  We  compared  the  results  of  our  work  with  the[Defalque and Thames 2017] approach and had, for some Bechmark programsused, a hit rate greater than 99%.
 
-# BCALM 2 
-
-BCALM 2 is a bioinformatics tool for constructing the compacted de Bruijn graph from sequencing data.
-
-This repository is the new, parallel version of the BCALM software.
-It is using a new algorithm, and is implemented using the [GATB](https://github.com/GATB/gatb-core/) library. 
-The original, single-threaded code of BCALM (version 1) is still available at: https://github.com/Malfoy/bcalm
 
 [![Build Status](https://travis-ci.org/GATB/bcalm.svg?branch=master)](https://travis-ci.org/GATB/bcalm)
 
