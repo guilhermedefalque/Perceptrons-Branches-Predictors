@@ -23,7 +23,7 @@ All implementations below are a correlating predictor. They were implemented bas
 
 - Percptron 5 (P5): This version was implemented using the idea of Hybrid per-ceptron and the prediction table (8 columns) is separated by instruction type. Thisperceptron has 8 bits in the local history, 8 values in the weight vector and 1 bias;
 
-- Percptron 6 (P6): This version was implemented using the idea of Hybrid per-ceptron and the prediction table (8 columns) is separated by instruction type. Thisperceptron has 16 bits in the local history, 16 values in the weight vector and 1 bias.
+ - - Percptron 6 (P6): This version was implemented using the idea of Hybrid per-ceptron and the prediction table (8 columns) is separated by instruction type. Thisperceptron has 16 bits in the local history, 16 values in the weight vector and 1 bias.
 
 # Pre-requisites and Instalations:
 
