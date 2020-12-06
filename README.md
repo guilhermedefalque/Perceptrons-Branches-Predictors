@@ -25,7 +25,11 @@ All implementations below are a correlating predictor. They were implemented bas
 
 -> Percptron 6 (P6): This version was implemented using the idea of Hybrid per-ceptron and the prediction table (8 columns) is separated by instruction type. Thisperceptron has 16 bits in the local history, 16 values in the weight vector and 1 bias.
 
+# Methodology
+
 # Pre-requisites:
+
+ArchC 
 
 Ubuntu 14.0.4;
 
@@ -36,6 +40,28 @@ www.accellera.org/downloads/standards/systemc
 
 Follow the installation steps directly from the official website: http://www.archc.org/doc.quickstart.html
 
+Download of Archc Mips Emulator in git clone https://github.com/archc/mips.git
+
+Define data caches and instructions on each model. To do so, using the
+MIPS model as an example, you should edit the mips.ac file with the settings of
+cache:
+
+```
+AC_ARCH(mips){
+ ac_mem DM:512M;
+ ac_icache IC("2w", 128, 8, "wt", "lru"); //*
+ ac_dcache DC("2w", 128, 8, "wt", "lru"); //*
+ 
+ ARCH_CTOR(mips) {
+
+ IC.bindTo (DM); //*
+ DC.bindTo (DM); //*
+ };
+};
+```
+Change the mips_isa.cpp file to the one found in our repository.
+
+Download Mibench applications from the link: http://archc.lsc.ic.unicamp.br/downloads.html - version 4.8.1.
 
 # Installation
 
