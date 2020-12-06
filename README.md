@@ -25,30 +25,17 @@ All implementations below are a correlating predictor. They were implemented bas
 
 -> Percptron 6 (P6): This version was implemented using the idea of Hybrid per-ceptron and the prediction table (8 columns) is separated by instruction type. Thisperceptron has 16 bits in the local history, 16 values in the weight vector and 1 bias.
 
-
-# Usage
-
-Read the instructions below to compile, then:
-
-    ./bcalm -in [reads.fa] -kmer-size [kmer_size] -abundance-min [abundance_threshold]
-  
-e.g.
-
-    ./bcalm -in reads.fastq -kmer-size 21 -abundance-min 2
-
-Importants parameters are:
-
-    -kmer-size [int]
-    
-The k-mer size, i.e. length of the nodes of the de Bruijn graph.
-
-    -abundance-min [int]
-
-Sets a threshold X below which k-mers that are seen (strictly) less than X times in the dataset are filtered out; i.e. sequencing errors, typically.
-
 # Pre-requisites:
 
-GCC >= 4.8 or a very recent C++11 capable compiler
+Ubuntu 14.0.4;
+
+For Arch C and system C instalation: GCC, G++, python, unzip, gawk, libc6- i386, vim, m4, patch, git, autoconf, libtool, libdw-dev, bison, flex, byacc, pkg-config, build-essential, automake. Em geral, todas podem ser instaladas por apt-get.
+
+System C instalation: Download of SystemC 2.3.1 (including TLM): http://
+www.accellera.org/downloads/standards/systemc 
+
+Follow the installation steps directly from the official website: http://www.archc.org/doc.quickstart.html
+
 
 # Installation
 
