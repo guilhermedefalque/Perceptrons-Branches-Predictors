@@ -63,4 +63,4 @@ All implementations below are a correlating predictor. They were implemented bas
 
 - Java Predictor Application Run [Defalque and Thames 2017]
 
-  - Java SE Development Kit 8;
+  - Install NetBeans and Java SE Development Kit 8: https://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-3413139-esa.html
