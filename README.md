@@ -25,6 +25,10 @@ All implementations below are a correlating predictor. They were implemented bas
 
 - Percptron 6 (P6): This version was implemented using the idea of Hybrid per-ceptron and the prediction table (8 columns) is separated by instruction type. Thisperceptron has 16 bits in the local history, 16 values in the weight vector and 1 bias.
 
+# Traces
+
+- Benchmark Mibench branch instruction traces were generated using archC Mips Simulator and are available at: https://drive.google.com/drive/u/1/folders/1uHyRq1e2ZlEPhFC_LsgxtU280CH2qj2-
+
 # Pre-requisites and Instalations:
 
 - Traces ArchC Generation
@@ -67,3 +71,4 @@ All implementations below are a correlating predictor. They were implemented bas
   
 - Running Perpectrons 
   - Python 3.8.6 or +;
+
